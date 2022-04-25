@@ -12,16 +12,16 @@ main {
 
 a {
     text-decoration: none;
-    color: #35858B;
+    color: #1c4649;
 }
   
-  a:hover {
+a:hover {
     color: #C65D7B;
   }
-  
-  a:active {
-    color: #4FBDBA;
-  }
+
+footer a:hover {
+    color: #347a80;
+}
 
 h1, h2, h3, h4, h5, h6 {
     color: #072227;
