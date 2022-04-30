@@ -1,0 +1,15 @@
+@media (min-width: 1350px) {
+    body {
+        margin: 5em 22em 5em 22em;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-gap: 1em;
+    }
+
+    main {
+        text-align: left;
+    }
+}

@@ -2,12 +2,12 @@ body {
     font-size: 16px;
     color: #072227;
     background-color: #eee;
-    margin: 5em 40em 5em 40em;
+    margin: 5em;
     text-align: center;
 }
 
 main {
-    text-align: left;
+    text-align: center;
 }
 
 a {
@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #072227;
 }
 
+p {
+    font-family: 'Cormorant Garamond', serif;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -35,9 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    grid-gap: 1em;
+    display: block;
     background-color: #ffbad0;
 }
 
@@ -46,6 +48,7 @@ footer {
     background-color: #ffbad0;
 }
 
+/* 
 @media only screen and (max-width: 1500px) {
     body {
         margin: 5em 20em 5em 20em;
@@ -63,4 +66,4 @@ footer {
     main {
         text-align: center;
     }
-  }
+  } */
