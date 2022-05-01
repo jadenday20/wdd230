@@ -1,11 +1,13 @@
 @media (min-width: 1350px) {
     body {
-        margin: 5em 22em 5em 22em;
+        margin: 2em 22% 2em 22%;
+        font-size: 20px;
     }
 
     header {
         display: grid;
-        grid-template-columns: 2fr 2fr;
+        grid-template-columns: 3fr 2fr;
+        place-items: center;
         grid-gap: 1em;
     }
 
