@@ -1,0 +1,17 @@
+@media (min-width: 1350px) {
+    body {
+        margin: 2em 22% 2em 22%;
+        font-size: 25px;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        place-items: center;
+        grid-gap: 1em;
+    }
+
+    main {
+        text-align: left;
+    }
+}
