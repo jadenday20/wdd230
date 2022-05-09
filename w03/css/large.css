@@ -6,9 +6,13 @@
 
     .hero {
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 4fr 2fr;
         place-items: center;
         grid-gap: 1em;
+    }
+
+    img {
+        max-width: 75%;
     }
 
     main {
