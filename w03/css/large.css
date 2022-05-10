@@ -18,4 +18,8 @@
     main {
         text-align: left;
     }
+
+    nav li a {
+        font-size: 1.3rem;
+    }
 }
