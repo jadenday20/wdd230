@@ -1,12 +1,19 @@
 @media (min-width: 1350px) {
     body {
         margin: 2em 22% 2em 22%;
-        font-size: 25px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 24px;
     }
 
     .hero {
         display: grid;
-        grid-template-columns: 4fr 2fr;
+        grid-template-columns: 2fr 1fr;
         place-items: center;
         grid-gap: 1em;
     }
@@ -26,5 +33,31 @@
     .tgy1 {
         font-family: var(--heading-font);
         font-size: 34px;
+    }
+
+    .personas {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .personas p {
+        margin-bottom: .5em;
+    }
+
+    .personas ul {
+        margin-top: .5em;
+    }
+
+    .center-container {
+        position: relative;
+    } 
+    
+    .center {
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
