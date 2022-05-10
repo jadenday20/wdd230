@@ -22,4 +22,9 @@
     nav li a {
         font-size: 1.3rem;
     }
+
+    .tgy1 {
+        font-family: var(--heading-font);
+        font-size: 34px;
+    }
 }
