@@ -1,0 +1,26 @@
+@media (min-width: 40em) {
+    body {
+        margin: 2em 17% 2em 17%;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    nav li a {
+        font-size: 1rem;
+    }
+}

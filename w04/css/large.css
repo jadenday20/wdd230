@@ -1,0 +1,33 @@
+@media (min-width: 1350px) {
+    body {
+        margin: 2em 22% 2em 22%;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        place-items: center;
+        grid-gap: 1em;
+    }
+
+    img {
+        max-width: 75%;
+    }
+
+    main {
+        text-align: left;
+    }
+
+    nav li a {
+        font-size: 1.3rem;
+    }
+    
+}
