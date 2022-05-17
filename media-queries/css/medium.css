@@ -1,0 +1,56 @@
+:root {
+    --paragraph-color: #11042b;
+    --background1: #a7cab1;
+    --background2: #f4ecd6;
+    --background3: #b9766a;
+    --background4: #88b7b5;
+    --link-color: #7e167e;
+    --link-highlighted: #cfcfbe;
+    --heading-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Noto Serif', serif;
+}
+
+/* @media (min-width: 40em) {
+    body {
+        background-color: var(--background2);
+    }
+
+    main, header, footer {
+        max-width: 75%;
+        margin: auto;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+} */
+
+/* @media (max-width: 75em) {
+    
+    main, header, footer {
+        max-width: 75%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+} */
+
+@media (min-width: 40em) and (max-width: 75em) {
+    
+    main, header, footer {
+        max-width: 75%;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
