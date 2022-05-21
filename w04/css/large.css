@@ -29,5 +29,13 @@
     nav li a {
         font-size: 1.3rem;
     }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
     
 }

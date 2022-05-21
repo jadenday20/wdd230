@@ -15,3 +15,7 @@ document.getElementById("last_updated").textContent = `Last Updated: ${new Date(
 document.getElementById("today").textContent = `Current Date: ${day}, ${date} ${month} ${year}`;
 
 document.querySelector(".copyright_year").innerHTML = "&copy;" + new Date().getFullYear();
+
+function toggleMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
+}
