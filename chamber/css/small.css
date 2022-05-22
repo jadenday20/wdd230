@@ -22,7 +22,7 @@ main, header, footer {
     margin: 0;
 }
 main {
-    padding: 1em 3em 1em 3em;
+    padding: 0;
     background-color: var(--background2);
 }
 
@@ -44,10 +44,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
-}
-
-img {
-    max-width: 65%;
 }
 
 header {
@@ -93,6 +89,14 @@ nav {
     color: var(--paragraph-color);
 }
 
+.navigation li:hover {
+    background-color: var(--link-highlighted2);
+}
+
+.navigation li a:hover {
+    color: #eee;
+}
+
 footer {
     text-align: center;
     background-color: var(--background1);
@@ -101,4 +105,48 @@ footer {
 
 footer a:hover {
     color: var(--link-highlighted2);
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+
+}
+
+.hero {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.action-call {
+    position: absolute;
+    height: 70%;
+    width: 80%;
+    opacity: 90%;
+    background-color: #eee;
+    top: 10%;
+    left: 6%;
+}
+
+.action-call p {
+    font-family: var(--heading-font);
+    font-size: 19px;
+    margin: 0;
+    padding: .75em;
+}
+
+.join-button {
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    right: 10%;
+    bottom: 5%;
+    background-color: var(--link-color);
+    color: #eee;
+    opacity:100%;
+}
+
+.join-button:hover {
+    background-color: var(--link-highlighted2);
 }
