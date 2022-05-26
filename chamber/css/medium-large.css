@@ -15,4 +15,12 @@
         height: 35%;
         width:35%;
     }
+
+    #big {
+        display: block;
+    }
+
+    #small {
+        display: none;
+    }
 }

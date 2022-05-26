@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/medium-large.css">
+    <!-- <link rel="stylesheet" href="css/medium-large.css"> -->
     <link rel="stylesheet" href="css/large.css">
     <link rel="preconnect" href="../https://fonts.googleapis.com">
     <link rel="preconnect" href="../https://fonts.gstatic.com" crossorigin>
@@ -32,15 +32,22 @@
             </ul>
         </nav>
         <p id="today">Wednesday, 24 July 2020</p>
-        <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook logo" width="30"></a>
-        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo" width="30"></a>
+        <div class="social-media">
+            <p>Follow us on Social Media</p>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook logo" width="30"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo" width="30"></a>
+        </div>
     </header>
     <main>
         <div class="hero-container">
             <img class="hero" src="images/hero.jpg" alt="" width="1000">
-            <span class="action-call">
+            <span class="action-call" id="big">
                 <p>Welcome to the Lindon Center of Commerce</p>
                 <button class="join-button">Join Here</button>
+            </span>
+            <span class="action-call" id="small">
+                <p>Lindon Center of Commerce</p>
+                <button class="join-button">Join</button>
             </span>
         </div>
         <div class="feature1">I'm a div</div>
