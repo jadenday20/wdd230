@@ -34,14 +34,21 @@
         display: none;
     }
 
+    .action-call {
+        grid-column: 2;
+        height: 54%;
+    }
+
     .action-call p {
         font-size: 30px;
         padding: 1.5em;
     }
 
-    .join-button {
-        right: 25%;
+    .action-call .join-button {
+        right: 10%;
         bottom: 10%;
+        height: 5em;
+        width: 8em;
     }
     
     #big {
@@ -50,5 +57,47 @@
 
     #small {
         display: none;
+    }
+
+    .programs {
+        display: block;
+    }
+
+    .weather {
+        display:block;
+    }
+
+    .all-features {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 1em;
+    }
+
+    #ribbon {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .hero-container {
+        grid-column: 2;
+        grid-row: 1/3;
+    }
+
+    #weather {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #join {
+        grid-column: 1;
+    }
+
+    #news {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    #treehouse {
+        display: grid;
     }
 }

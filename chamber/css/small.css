@@ -3,6 +3,7 @@
     --background1: #ffbad0;
     --background2: #FCCDBA;
     --background3: #afcde9;
+    --background4: #84bcca;
     --link-color: #205d61;
     --link-highlighted: #c53e64;
     --link-highlighted2: #347a80;
@@ -11,7 +12,7 @@
 }
 
 body {
-    font-size: 14px;
+    font-size: 16px;
     color: var(--paragraph-color);
     background-color: #eee;
 }
@@ -159,14 +160,18 @@ footer a:hover {
 }
 
 .join-button {
+    background-color: var(--link-color);
+    color: #eee;
+    height: 3em;
+    width: 6.5em;
+}
+
+.action-call .join-button {
     width: 30%;
     height: 30%;
     position: absolute;
     right: 10%;
     bottom: 5%;
-    background-color: var(--link-color);
-    color: #eee;
-    opacity:100%;
 }
 
 .join-button:hover {
@@ -174,5 +179,23 @@ footer a:hover {
 }
 
 #big {
+    display:none;
+}
+
+.feature {
+    background-color: var(--background4);
+    margin: 2em auto 2em auto;
+    text-align: center;
+    padding: 1em;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 3px 4px 10px #777;
+}
+
+.feature h2 {
+    text-align: center;
+}
+
+#treehouse {
     display:none;
 }
