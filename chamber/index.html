@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,14 @@
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
-    <!-- <link rel="stylesheet" href="css/medium-large.css"> -->
     <link rel="stylesheet" href="css/large.css">
     <link rel="preconnect" href="../https://fonts.googleapis.com">
     <link rel="preconnect" href="../https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap"
+        rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
 </head>
+
 <body>
     <header>
         <div class="title">
@@ -39,24 +41,50 @@
         </div>
     </header>
     <main>
-        <div class="hero-container">
-            <img class="hero" src="images/hero.jpg" alt="" width="1000">
-            <span class="action-call" id="big">
-                <p>Welcome to the Lindon Center of Commerce</p>
-                <button class="join-button">Join Here</button>
-            </span>
-            <span class="action-call" id="small">
-                <p>Lindon Center of Commerce</p>
-                <button class="join-button">Join</button>
-            </span>
+        <div class="all-features">
+            <div class="hero-container">
+                <picture>
+                    <source media="(min-width:84em)" srcset="images/big-hero700.jpg">
+                    <img class="hero" src="images/little-hero.jpg" alt="" width="700">
+                </picture>
+                <span class="action-call" id="big">
+                    <p>Welcome to Lindon</p>
+                    <button class="join-button">Join Here</button>
+                </span>
+                <span class="action-call" id="small">
+                    <p>Welcome to Lindon</p>
+                    <button class="join-button">Join</button>
+                </span>
+            </div>
+            <div class="feature" id="news">
+                <h2>News</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, sunt!</p>
+            </div>
+            <div class="feature" id="transport">
+                <h2>Transport</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, quae.</p>
+            </div>
+            <div class="feature" id="coding">
+                <h2>Coding</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, sunt!</p>
+            </div>
+            <div class="feature" id="join">
+                <button class="join-button">Join Us</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, unde!</p>
+            </div>
+            <div class="feature" id="ribbon">
+                <h2>Ribbon Cutting</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, quae.</p>
+            </div>
+            <div class="feature" id="weather">
+                <h2>Weather</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, sunt!</p>
+            </div>
+            <div class="feature" id="treehouse">
+                <h2>Treehouse</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, quae.</p>
+            </div>
         </div>
-        <div class="feature1">I'm a div</div>
-        <div class="feature2">I'm a div</div>
-        <div class="feature3">I'm a div</div>
-        <div class="feature4">I'm a div</div>
-        <div class="feature5">I'm a div</div>
-        <div class="feature6">I'm a div</div>
-        <div class="feature7">I'm a div</div>
     </main>
     <footer>
         <img src="images/phone.png" alt="" width="20">
@@ -66,10 +94,11 @@
         <nobr>day18007@byui.edu</nobr>
         <br>
         <img src="images/map.png" alt="" width="20">
-        <a href="https://www.google.com/maps/place/The+Church+of+Jesus+Christ+of+Latter-day+Saints/@40.3440425,-111.6999718,15.75z/data=!4m5!3m4!1s0x874d850efa45fcc3:0x40a32940490e8683!8m2!3d40.3439033!4d-111.7028201">Map</a>
+        <a
+            href="https://www.google.com/maps/place/The+Church+of+Jesus+Christ+of+Latter-day+Saints/@40.3440425,-111.6999718,15.75z/data=!4m5!3m4!1s0x874d850efa45fcc3:0x40a32940490e8683!8m2!3d40.3439033!4d-111.7028201">Map</a>
         <br>
         <span class="copyright_year"></span>
-        | Lindon Chamber of Commerce | Jaden Day | WDD 230 Project 
+        | Lindon Chamber of Commerce | Jaden Day | WDD 230 Project
         <br>
         <br>
         <img src="images/ccllogo.png" alt="" width="50">
@@ -77,4 +106,5 @@
     </footer>
     <script src="js/index.js"></script>
 </body>
+
 </html>
