@@ -19,3 +19,8 @@ document.querySelector(".copyright_year").innerHTML = "&copy;" + new Date().getF
 function toggleMenu() {
     document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
+
+if (day == "Monday" || day == "Tuesday") {
+    document.querySelector(".temp-banner").style.display = "block";
+    document.querySelector(".temp-banner").innerHTML = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+}

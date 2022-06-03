@@ -21,10 +21,13 @@ main, header, footer {
     max-width: 1050px;
     overflow-wrap: break-word;
     margin: 0;
+    border-style: solid;
+    border-color: black;
 }
 main {
     padding: 0 0 .1em 0;
     background-color: var(--background2);
+    border-width: 0 1px 0 1px;
 }
 
 a {
@@ -51,6 +54,7 @@ header {
     background-color: var(--background1);
     padding: 1em;
     text-align: center;
+    border-width: 1px;
 }
 
 header img {
@@ -124,6 +128,7 @@ footer {
     text-align: center;
     background-color: var(--background1);
     padding: 1em;
+    border-width: .75px;
 }
 
 footer a:hover {
@@ -198,4 +203,14 @@ footer a:hover {
 
 #treehouse {
     display:none;
+}
+
+.temp-banner {
+    background-color: var(--background3);
+    max-width: 75%;
+    display: none;
+    margin: auto;
+    border-style: solid;
+    border-width: .5px;
+    padding: .5em;
 }
