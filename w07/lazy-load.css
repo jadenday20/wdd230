@@ -1,0 +1,16 @@
+body {
+    background-color: lightskyblue;
+}
+
+img[src] {
+    content: url("https://placekitten.com/300/400");
+}
+
+img[data-src] {
+    content: url("placeholder.png");
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }
