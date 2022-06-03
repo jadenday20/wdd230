@@ -27,7 +27,7 @@ main, header, footer {
 main {
     padding: 0 0 .1em 0;
     background-color: var(--background2);
-    border-width: 0 1px 0 1px;
+    border-width: 0 .75px 0 .75px;
 }
 
 a {
@@ -54,7 +54,7 @@ header {
     background-color: var(--background1);
     padding: 1em;
     text-align: center;
-    border-width: 1px;
+    border-width: .75px;
 }
 
 header img {
