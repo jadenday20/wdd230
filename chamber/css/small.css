@@ -65,6 +65,10 @@ nav {
     background-color: var(--background3);
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .navigation {
     list-style-type: none;
     padding: 0;
@@ -205,6 +209,10 @@ footer a:hover {
     display:none;
 }
 
+#weather h2{
+    margin: .2em 0 .2em 0;
+}
+
 .temp-banner {
     background-color: var(--background3);
     max-width: 75%;
@@ -213,4 +221,30 @@ footer a:hover {
     border-style: solid;
     border-width: .5px;
     padding: .5em;
+}
+
+.weather-logo {
+    background-color: #ddd;
+    border-radius: 35px;
+}
+
+#temp, #speed {
+    max-width: 35px;
+    padding: 3px;
+    margin: 3px;
+    text-align: center;
+}
+
+#wind-chill {
+    padding:3px;
+}
+
+#chill-box {
+    height: 24px;
+    width: 35px;
+    margin: 3px;
+    background-color: #bbb;
+    border-style: solid;
+    border-color: black;
+    border-width:.5px;
 }

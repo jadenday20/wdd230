@@ -10,34 +10,6 @@ const loadImages = (image) => {
     image.onload = () => {image.removeAttribute("data-src");}; 
 };
 
-// if ('IntersectionObserver' in window){
-//     const imgObserver = new IntersectionObserver((items, imgObserver) => {
-//         items.forEach((item) => {
-//             if (!item.isIntersecting) {
-//                 console.log("Hello")
-//                 return;
-//             }
-//             else {
-//                 loadImages(item.target);                
-//                 console.log("Hello");
-//                 imgObserver.unobserve(item.target);
-//             }
-//         });
-//     }, imageOptions);
-
-//     imagesToLoad.forEach((img) => {
-//         imgObserver.observe(img);
-//     });
-// }
-
-// else {
-//     imagesToLoad.forEach((img) => {
-//         LoadImages(img);
-//     });
-//     console.log("Hello World")
-
-// }
-
 if('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((items, observer) => {
       items.forEach((item) => {
