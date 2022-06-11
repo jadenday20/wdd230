@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber</title>
+    <meta name="description" content="The home page of the chamber of commerce website.">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="../https://fonts.googleapis.com">
+    <link rel="preconnect" href="../https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <span class="temp-banner"></span>
+        <div class="title">
+            <h1>Lindon Chamber of Commerce</h1>
+            <a href="#"><img src="images/ccllogo.webp" alt="" width="100"></a>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hamburger" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Nav 2</a></li>
+                <li><a href="#">Nav 3</a></li>
+            </ul>
+        </nav>
+        <p id="today">Wednesday, 24 July 2020</p>
+        <div class="social-media">
+            <p>Follow us on Social Media</p>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook logo" width="30"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo" width="30"></a>
+        </div>
+    </header>
+    <main>
+        <h2>Places to Visit</h2>
+        <!-- <h3>Lindon Aquatics Center</h3>
+        <picture class="discover">
+            <source media="(min-width:40em) and (max-width:83em)" srcset="images/aquatics/aquatics-medium.jpg"
+                loading="lazy">
+            <source media="(min-width:84em)" srcset="images/aquatics/aquatics-large.jpg" loading="lazy">
+            <img src="images/aquatics/aquatics-small.jpg" loading="lazy" alt="" class="discover">
+        </picture>
+        <h3>Lindon Nursery</h3>
+        <picture>
+            <source media="(min-width:40em) and (max-width:83em)" srcset="images/nursery/nursery-medium.jpg"
+                loading="lazy"  class="discover">
+            <source media="(min-width:84em)" srcset="images/nursery/nursery-large.jpg" loading="lazy"  class="discover">
+            <img src="images/nursery/nursery-small.jpg" loading="lazy" alt=""  class="discover">
+        </picture>
+        <h3>Arby's</h3>
+        <picture>
+            <source media="(min-width:40em) and (max-width:83em)" srcset="images/arbys/arbys-medium.jpg" loading="lazy">
+            <source media="(min-width:84em)" srcset="images/arbys/arbys-large.jpg" loading="lazy">
+            <img src="images/arbys/arbys-small.jpg" loading="lazy" alt="">
+        </picture>
+        <h3>The Smoking Apple</h3>
+        <picture>
+            <source media="(min-width:40em) and (max-width:83em)" srcset="images/smoking-apple/smoking-apple-medium.jpg"
+                loading="lazy">
+            <source media="(min-width:84em)" srcset="images/smoking-apple/smoking-apple-large.jpg" loading="lazy">
+            <img src="images/smoking-apple/smoking-apple-small.jpg" loading="lazy" alt="">
+        </picture>
+        <h3>Walmart Supercenter</h3>
+        <picture>
+            <source media="(min-width:40em) and (max-width:83em)" srcset="images/walmart/walmart-medium.jpg"
+                loading="lazy">
+            <source media="(min-width:84em)" srcset="images/walmart/walmart-large.jpg" loading="lazy">
+            <img src="images/walmart/walmart-small.jpg" loading="lazy" alt="">
+        </picture> -->
+
+        <figure class="discover-container">
+            <figcaption>Lindon Aquatics Center</figcaption>
+            <img src="images/aquatics/aquatics-small.jpg" loading="lazy" alt="">
+            <p>Outdoor water park/pool facility. The aquatics center features pools, a lazy river, a surf simulator, etc.</p>
+        </figure>
+        <figure class="discover-container">
+            <figcaption>Linden Nursery</figcaption>
+            <img src="images/nursery/nursery-small.jpg" loading="lazy" alt="">
+            <p>A plant nursery. This nursery has everything from trees to chickens to fertilizers.</p>
+        </figure>
+        <figure class="discover-container">
+            <figcaption>Arby's</figcaption>
+            <img src="images/arbys/arbys-small.jpg" loading="lazy" alt="">
+            <p>An quick, affordable fast food option. They have the meats!</p>
+        </figure>
+        <figure class="discover-container">
+            <figcaption>The Smoking Apple</figcaption>
+            <img src="images/smoking-apple/smoking-apple-small.jpg" loading="lazy" alt="">
+            <p>A great, relatively cheap restaurent. A bit more pricey than Arby's, but serves great, high quality food.</p>
+        </figure>
+        <figure class="discover-container">
+            <figcaption>Walmart Supercenter</figcaption>
+            <img src="images/walmart/walmart-small.jpg" loading="lazy" alt="">
+            <p>The supermarket that has pretty much everything. I don't know what else to say about it.</p>
+        </figure>
+        <h2>Statistics</h2>
+        <div class="table-container">
+            <table>
+                <caption>Lindon Population by Year</caption>
+                <tr>
+                    <th>Year</th>
+                    <th>Population</th>
+                    <th>Growth</th>
+                    <th>Annual Growth Rate</th>
+                </tr>
+                <tr>
+                    <td>2022</td>
+                    <td>11,511</td>
+                    <td>137</td>
+                    <td>1.20%</td>
+                </tr>
+                <tr>
+                    <td>2021</td>
+                    <td>11,374</td>
+                    <td>137</td>
+                    <td>1.22%</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>11,237</td>
+                    <td>137</td>
+                    <td>1.23%</td>
+                </tr>
+                <tr>
+                    <td>2019</td>
+                    <td>11,100</td>
+                    <td>137</td>
+                    <td>1.25%</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>10,963</td>
+                    <td>15</td>
+                    <td>0.14%</td>
+                </tr>
+                <tr>
+                    <td>2017</td>
+                    <td>10,948</td>
+                    <td>88</td>
+                    <td>0.81%</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>10,860</td>
+                    <td>138</td>
+                    <td>1.29%</td>
+                </tr>
+                <tr>
+                    <td>2015</td>
+                    <td>10,722</td>
+                    <td>103</td>
+                    <td>0.97%</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>10,619</td>
+                    <td>101</td>
+                    <td>0.96%</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>10,518</td>
+                    <td>132</td>
+                    <td>1.27%</td>
+                </tr>
+                <tr>
+                    <td>2012</td>
+                    <td>10,386</td>
+                    <td>148</td>
+                    <td>1.45%</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>10,238</td>
+                    <td>142</td>
+                    <td>1.41%</td>
+                </tr>
+                <tr>
+                    <td>2010</td>
+                    <td>10,096</td>
+                    <td>1,733</td>
+                    <td>1.90%</td>
+                </tr>
+                <tr>
+                    <td>2000</td>
+                    <td>8,363</td>
+                    <td>4,545</td>
+                    <td>8.16%</td>
+                </tr>
+                <tr>
+                    <td>1990</td>
+                    <td>3,818</td>
+                    <td>1,022</td>
+                    <td>3.16%</td>
+                </tr>
+                <tr>
+                    <td>1980</td>
+                    <td>2,796</td>
+                    <td>N/A</td>
+                    <td>0.00%</td>
+                </tr>
+            </table>
+            <p>Note: 2021 and 2022 data is projected</p>
+            <p>This Table Data is from worldpopulationreview.com</p>
+        </div>
+        <h3>Ethnicity</h3>
+        <p>From datausa.io:</p>
+        <p>The 5 largest ethnic groups in Lindon, UT are White (Non-Hispanic) (88.3%), White (Hispanic) (4.88%), Two+ (Non-Hispanic) (2.58%), Asian (Non-Hispanic) (1.81%), and Native Hawaiian & Other Pacific Islander (Non-Hispanic) (1.43%). 0% of the households in Lindon, UT speak a non-English language at home as their primary language.</p>
+
+
+    </main>
+    <footer>
+        <img src="images/phone.png" alt="" width="20">
+        <nobr>(385)202-8190</nobr>
+        <br>
+        <img src="images/email.png" alt="" width="20">
+        <nobr>day18007@byui.edu</nobr>
+        <br>
+        <img src="images/map.png" alt="" width="20">
+        <a
+            href="https://www.google.com/maps/place/The+Church+of+Jesus+Christ+of+Latter-day+Saints/@40.3440425,-111.6999718,15.75z/data=!4m5!3m4!1s0x874d850efa45fcc3:0x40a32940490e8683!8m2!3d40.3439033!4d-111.7028201">Map</a>
+        <br>
+        <span class="copyright_year"></span>
+        | Lindon Chamber of Commerce | Jaden Day | WDD 230 Project
+        <br>
+        <br>
+        <a href="#"><img src="images/ccllogo.png" alt="" width="50"></a>
+        <p id="last_updated"></p>
+    </footer>
+    <!-- <script src="js/data_table.js"></script> -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -74,4 +74,13 @@
     #join {
         grid-column: 1/3;
     }
+
+    th, td {
+        font-size: 16px;
+    }
+
+    .discover-container img:hover {
+        border-radius: 20px 65px;
+        opacity: .9;
+    }
 }

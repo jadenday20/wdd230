@@ -100,4 +100,8 @@
     #treehouse {
         display: grid;
     }
+
+    th, td {
+        font-size: 18px;
+    }
 }
