@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
-    max-width: 50ch;
 }
 
 header {
@@ -278,6 +277,9 @@ th, td {
 
 caption, figcaption {
     padding: 2px;
+    border-style: solid;
+    border-width: .5px;
+    background-color: #eee;
 }
 
 .discover-container {
@@ -288,4 +290,19 @@ caption, figcaption {
 
 img {
     max-width: 100%;
+}
+
+.long {
+    max-width: 50ch;
+}
+
+#days-since-visited {
+    display:block;
+    margin: auto;
+    text-align: center;
+    background-color: var(--background3);
+    border-style: solid;
+    border-width: 1px;
+    max-width: 250px;
+    padding: 2px;
 }
