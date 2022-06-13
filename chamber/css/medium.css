@@ -80,7 +80,7 @@
     }
 
     .discover-container img:hover {
-        border-radius: 20px 65px;
+        border-radius: 20px 40px;
         opacity: .9;
     }
 }
