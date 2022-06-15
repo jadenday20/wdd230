@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber</title>
+    <meta name="description" content="The home page of the chamber of commerce website.">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="../https://fonts.googleapis.com">
+    <link rel="preconnect" href="../https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Noto+Serif&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <span class="temp-banner"></span>
+        <div class="title">
+            <h1>Lindon Chamber of Commerce</h1>
+            <a href="#"><img src="images/ccllogo.webp" alt="" width="100"></a>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a class="hamburger" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Nav 3</a></li>
+            </ul>
+        </nav>
+        <p id="today">Wednesday, 24 July 2020</p>
+        <div class="social-media">
+            <p>Follow us on Social Media</p>
+            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="facebook logo" width="30"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="instagram logo" width="30"></a>
+        </div>
+    </header>
+    <main>
+        <form action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <section>
+                    <label for="fname">First Name: </label>
+                    <input type="text" id="fname" name="fname" autofocus required>
+                    <br>
+                    <label for="lname">Last Name: </label>
+                    <input type="text" id="lname" name="lname" required>
+                    <br>
+                    <label for="bus-title">Business Title: </label>
+                    <input type="text" id="bus-title" name="bus-title">
+                </section>
+                <br>
+                <section>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="phone#">Phone Number: </label>
+                    <input type="tel" id="phone#" name="phone#" required>
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend>Business and Membership</legend>
+                <section>
+                    <label for="bus-name">Name of Business: </label>
+                    <input type="text" id="bus-name" name="bus-name" required>
+                </section>
+                <br>
+                <section>
+                    <label for="membership">Membership Level: </label>
+                    <br>
+                    <input type="radio" id="np" name="membership" required>
+                    <label for="np">Non-Profit </label>
+                    <br>
+                    <input type="radio" id="bronze" name="membership" required>
+                    <label for="bronze">Bronze </label>
+                    <br>
+                    <input type="radio" id="silver" name="membership" required>
+                    <label for="silver">Silver </label>
+                    <br>
+                    <input type="radio" id="gold" name="membership" required>
+                    <label for="gold">Gold </label>
+                </section>
+                <br>
+                <section>
+                    <label for="description">Business description: </label>
+                    <br>
+                    <textarea id="bus-description" name="description"></textarea>
+                    <input type="hidden" id="date-time" name="date-time">
+                </section>
+            </fieldset>
+            <br>
+            <input type="submit" value="Join With My Business">
+        </form>
+    </main>
+    <footer>
+        <img src="images/phone.png" alt="" width="20">
+        <nobr>(385)202-8190</nobr>
+        <br>
+        <img src="images/email.png" alt="" width="20">
+        <nobr>day18007@byui.edu</nobr>
+        <br>
+        <img src="images/map.png" alt="" width="20">
+        <a
+            href="https://www.google.com/maps/place/The+Church+of+Jesus+Christ+of+Latter-day+Saints/@40.3440425,-111.6999718,15.75z/data=!4m5!3m4!1s0x874d850efa45fcc3:0x40a32940490e8683!8m2!3d40.3439033!4d-111.7028201">Map</a>
+        <br>
+        <span class="copyright_year"></span>
+        | Lindon Chamber of Commerce | Jaden Day | WDD 230 Project
+        <br>
+        <br>
+        <a href="#"><img src="images/ccllogo.png" alt="" width="50"></a>
+        <p id="last_updated"></p>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

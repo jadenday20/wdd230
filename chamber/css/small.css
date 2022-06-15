@@ -306,3 +306,29 @@ img {
     max-width: 250px;
     padding: 2px;
 }
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid var(--link-highlighted2);
+    border-radius: 5px;
+    max-width: 100%;
+    
+}
+
+form label {
+    font-size: 22px;
+}
+
+#bus-description {
+    max-width: 95%;
+    width: 400px;
+    height: 150px;
+}
+
+form input[type=text], form input[type=tel], form input[type=email], form textarea {
+    max-width: 95%;
+    padding: 4px;
+    margin: 3px 0 3px 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
