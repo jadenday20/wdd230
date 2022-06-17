@@ -119,4 +119,12 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5em;
     }
+
+    #more-details {
+        display: none;
+    }
+
+    #membership-info {
+        display: block;
+    }
 }
