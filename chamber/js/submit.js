@@ -14,7 +14,7 @@ if (minutes < 10) {
     minute_str = `0${minutes}`
 }
 else {
-    minute_stry = `${minutes}`
+    minute_str = `${minutes}`
 }
 
 let cur_day = newdate.toDateString();
