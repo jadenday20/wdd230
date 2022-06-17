@@ -42,61 +42,65 @@
         </div>
     </header>
     <main>
-        <form action="thankyou.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <section>
-                    <label for="fname">First Name: </label>
-                    <input type="text" id="fname" name="fname" autofocus required>
-                    <br>
-                    <label for="lname">Last Name: </label>
-                    <input type="text" id="lname" name="lname" required>
-                    <br>
-                    <label for="bus-title">Business Title: </label>
-                    <input type="text" id="bus-title" name="bus-title">
-                </section>
-                <br>
-                <section>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" required>
-                    <br>
-                    <label for="phone#">Phone Number: </label>
-                    <input type="tel" id="phone#" name="phone#" required>
-                </section>
-            </fieldset>
-            <fieldset>
-                <legend>Business and Membership</legend>
-                <section>
-                    <label for="bus-name">Name of Business: </label>
-                    <input type="text" id="bus-name" name="bus-name" required>
-                </section>
-                <br>
-                <section>
-                    <label for="membership">Membership Level: </label>
-                    <br>
-                    <input type="radio" id="np" name="membership" required>
-                    <label for="np">Non-Profit </label>
-                    <br>
-                    <input type="radio" id="bronze" name="membership" required>
-                    <label for="bronze">Bronze </label>
-                    <br>
-                    <input type="radio" id="silver" name="membership" required>
-                    <label for="silver">Silver </label>
-                    <br>
-                    <input type="radio" id="gold" name="membership" required>
-                    <label for="gold">Gold </label>
-                </section>
-                <br>
-                <section>
-                    <label for="description">Business description: </label>
-                    <br>
-                    <textarea id="bus-description" name="description"></textarea>
-                    <input type="hidden" id="date-time" name="date-time">
-                </section>
-            </fieldset>
-            <br>
-            <input type="submit" value="Join the Chamber">
-        </form>
+        <h2>Add Your Business</h2>
+        <div id="form-grid">
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <section>
+                        <label for="fname">First Name* </label>
+                        <input type="text" id="fname" name="fname" autofocus required maxlength="25">
+                        <label for="lname">Last Name* </label>
+                        <input type="text" id="lname" name="lname" required maxlength="25">
+                        <label for="bus-title">Business Title </label>
+                        <input type="text" id="bus-title" name="bus-title" pattern="[a-zA-Z -]{0,7}" maxlength="25">
+                    </section>
+                    <section>
+                        <label for="email">Email* </label>
+                        <input type="email" id="email" name="email" required placeholder="jdoe@example.com"
+                            maxlength="25">
+                        <label for="phone#">Phone Number* </label>
+                        <input type="tel" id="phone#" name="phone#" required maxlength="15">
+                    </section>
+                </fieldset>
+                <fieldset>
+                    <legend>Business and Membership</legend>
+                    <section>
+                        <label for="bus-name">Name of Business* </label>
+                        <input type="text" id="bus-name" name="bus-name" required maxlength="25">
+                    </section>
+
+                    <section>
+                        <label for="description">Business Description </label>
+                        <textarea id="bus-description" name="description" maxlength="200"></textarea>
+                        <input type="hidden" id="date-time" name="date-time">
+                    </section>
+                    <section id="membership">
+                        <label for="membership">Membership Level* </label>
+                        <section id="membership-radio">
+                            <label><input type="radio" name="membership" required> Non-Profit</label>
+                            <br>
+                            <label><input type="radio" name="membership" required> Bronze</label>
+                            <br>
+                            <label><input type="radio" name="membership" required> Silver</label>
+                            <br>
+                            <label><input type="radio" name="membership" required> Gold</label>
+                        </section>
+                    </section>
+                </fieldset>
+                <input type="submit" value="Add My Business">
+            </form>
+            <div id="membership-info">
+                <h3>Non-profit: Free</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga modi assumenda explicabo quaerat hic.</p>
+                <h3>Bronze: $20 per Year</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga modi assumenda explicabo quaerat hic.</p>
+                <h3>Silver: $34.99 per Year</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga modi assumenda explicabo quaerat hic.</p>
+                <h3>Gold: $49.99 per Year</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga modi assumenda explicabo quaerat hic.</p>
+            </div>
+        </div>
     </main>
     <footer>
         <img src="images/phone.png" alt="" width="20">
@@ -117,7 +121,6 @@
         <p id="last_updated"></p>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/windchill.js"></script>
 </body>
 
 </html>

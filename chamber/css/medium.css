@@ -1,3 +1,16 @@
+:root {
+    --paragraph-color: #072227;
+    --background1: #ffbad0;
+    --background2: #FCCDBA;
+    --background3: #afcde9;
+    --background4: #84bcca;
+    --link-color: #205d61;
+    --link-highlighted: #c53e64;
+    --link-highlighted2: #347a80;
+    --heading-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Noto Serif', serif;
+}
+
 @media (min-width: 40em) {
     body {
         margin: 2em 17% 2em 17%;
@@ -82,5 +95,23 @@
     .discover-container img:hover {
         border-radius: 20px 40px;
         opacity: .9;
+    }
+
+    form {
+        margin:2em auto;
+        max-width: 450px;
+    }
+
+    form input[type=text], form input[type=tel], form input[type=email], form textarea {
+        width: 25ch;
+    }
+
+    #membership-info {
+        background-color: #efe;
+        border: 1px solid #444;
+        border-radius: 5px;
+        margin:2em auto;
+        padding: 20px 35px 20px 35px;
+        max-width: 400px;
     }
 }

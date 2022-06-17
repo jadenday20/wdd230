@@ -30,6 +30,10 @@ main {
     border-width: 0 .75px 0 .75px;
 }
 
+h2, h3 {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     color: var(--link-color);
@@ -98,7 +102,7 @@ button:hover {
     color: var(--paragraph-color);
 }
 
-.navigation li:hover {
+.navigation li:hover, .navigation a:focus {
     background-color: var(--link-highlighted2);
 }
 
@@ -307,28 +311,79 @@ img {
     padding: 2px;
 }
 
+legend {
+    padding: 8px;
+}
+
+form {
+    background-color: #eef;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin:2em;
+    padding: 20px 35px 20px 35px;
+    max-width: 400px;
+}
+
 form fieldset {
-    margin: 2rem 0;
+    display: block;
+    margin: auto;
     border: 1px solid var(--link-highlighted2);
     border-radius: 5px;
-    max-width: 100%;
-    
+    width: 406px;
+    max-width: 90%;
+}
+
+form input[type=submit] {
+    display: block;
+    margin:20px auto 2px auto;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 50px;
+    width: 180px;
+    background-color: var(--background3);
+}
+
+form input[type=submit]:hover, form input[type=submit]:focus{
+    background-color: var(--background4);
+    cursor: pointer;
 }
 
 form label {
-    font-size: 22px;
+    display: block;
+    margin-top: 10px;
+}
+
+#membership-radio label {
+    display: inline-block;
+    margin-top: 4px;
+}
+
+#membership-radio {
+    margin-left: 12px;
 }
 
 #bus-description {
-    max-width: 95%;
-    width: 400px;
-    height: 150px;
+    width: 90%;
+    height: 185px;
+    resize: none;
 }
 
 form input[type=text], form input[type=tel], form input[type=email], form textarea {
-    max-width: 95%;
-    padding: 4px;
+    width: 90%;
+    padding: 6px;
     margin: 3px 0 3px 0;
     border: 1px solid #666;
     border-radius: 5px;
+}
+
+form input:required {
+    border-bottom: 4px solid red;
+}
+
+form input:required:valid {
+    border: 1px solid #666;
+}
+
+.thanks-message {
+    text-align: center;
 }

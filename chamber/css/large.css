@@ -104,4 +104,19 @@
     th, td {
         font-size: 18px;
     }
+
+    #bus-description {
+        width: 300px;
+        height: 150px;
+    }
+
+    form {
+        max-width: 350px;
+    }
+
+    #form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1.5em;
+    }
 }
