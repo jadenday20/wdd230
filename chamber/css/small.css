@@ -418,3 +418,12 @@ form input:required:valid {
 #more-details {
     margin-top: 1em;
 }
+
+.to-visit {
+    background-color: var(--background4);
+    padding: 8px;
+    max-width: 400px;
+    display: block;
+    margin: auto;
+    border:.5px solid black;
+}
