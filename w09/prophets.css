@@ -1,0 +1,37 @@
+body {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5px;
+    box-shadow: 0 0 10px 5px #999;
+    padding: 20px;
+    background-color: #ddd;
+    margin: 15px;
+}
+
+h1, h2 {
+    color: #0e493a;
+    font-family: 'Lilita One', cursive;
+}
+
+h2 {
+    margin-bottom: .5em;
+}
+
+p{
+    margin: .5em;
+}
+
+section {
+    background-color: #abd0c2;
+    border: 1px solid #08362b;
+}
+
+img {
+    box-shadow: 0 0 10px 5px #999;
+    max-width: 60%;
+    margin:10px;
+}
