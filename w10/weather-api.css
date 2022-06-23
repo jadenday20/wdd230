@@ -1,8 +1,11 @@
 :root {
     --paragraph-color: #012034;
-    --background1: #ffbad0;
-    --background2: #aeddff;
+    --background1: #622c3d;
+    --background2: #b5defc;
     --background3: rgb(244, 244, 244);
+    --header-text: rgb(229, 236, 253);
+    --header-link: rgb(169, 228, 250);
+    --header-link-highlighted: rgb(80, 156, 184);
     --heading-font: 'Cormorant Garamond', serif;
     --paragraph-font: 'Noto Serif', serif;
 }
@@ -22,7 +25,21 @@ footer, header, main {
 
 footer, header {
     background-color: var(--background1);
-    
+    color: var(--header-text);
+}
+
+footer a, header a{
+    color: var(--header-link);
+    font-style: italic;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 1.5px;
+}
+
+footer a:hover, header a:hover{
+    color: var(--header-link-highlighted);
+    font-style: italic;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 1.5px;
 }
 
 main {
