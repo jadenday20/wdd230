@@ -48,14 +48,9 @@
                     <source media="(min-width:84em)" srcset="images/big-hero700.jpg">
                     <img class="hero" src="images/little-hero.jpg" alt="" width="700">
                 </picture>
-                <!-- <picture>
-                    <source media="(min-width:40em) and (max-width:83em)" srcset="images/test-medium.jpg">
-                    <source media="(min-width:84em)" srcset="images/test-large.jpg">
-                    <img class="hero" src="images/test-small.jpg" alt="" width="700">
-                </picture> -->
                 <span class="action-call" id="big">
                     <p>Welcome to Lindon</p>
-                    <button class="join-button">Join Here</button>
+                    <a href="join.html"><button class="join-button">Join Here</button></a>
                 </span>
                 <span class="action-call" id="small">
                     <p>Welcome to Lindon</p>
@@ -82,9 +77,16 @@
                 <h2>Ribbon Cutting</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, quae.</p>
             </div>
+            
             <div class="feature" id="weather">
+                <!-- <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span> &deg;F</p>
+                <h2>Current Condition Icon</h2>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure> -->
                 <h2>Weather</h2>
-                <img class="weather-logo" src="images/weather.png" alt="" width="65"><br>
+                <img id="weather-logo" src="images/weather.png" alt="" width="65"><br>
                 <label for="temp">Temperature:</label>
                 <input type="text" id="temp" placeholder="°F"></input><br>
                 <label for="speed">Wind Speed:</label>
@@ -120,6 +122,7 @@
     </footer>
     <script src="js/index.js"></script>
     <script src="js/windchill.js"></script>
+    <script src="js/weatherapi.js"></script>
 </body>
 
 </html>

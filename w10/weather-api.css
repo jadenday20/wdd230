@@ -1,0 +1,38 @@
+:root {
+    --paragraph-color: #012034;
+    --background1: #ffbad0;
+    --background2: #aeddff;
+    --background3: rgb(244, 244, 244);
+    --heading-font: 'Cormorant Garamond', serif;
+    --paragraph-font: 'Noto Serif', serif;
+}
+
+body {
+    background-color: var(--background3);
+    padding: 2em;
+}
+
+footer, header, main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    font-size: large;
+}
+
+footer, header {
+    background-color: var(--background1);
+    
+}
+
+main {
+    background-color: var(--background2);
+}
+
+#weather-icon {
+    width: 100px;
+}
+
+figcaption {
+    text-transform: capitalize; 
+}
