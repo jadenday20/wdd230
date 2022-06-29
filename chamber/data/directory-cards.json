@@ -1,0 +1,76 @@
+{
+    "businesses": [
+        {
+            "name": "Jimbo's Fruitsnacks",
+            "address": "260 S 280th W",
+            "phone": "(801) 224-8631",
+            "url": "jimbosfruits.com",
+            "image": "jimbos-logo.png",
+            "membership": "gold"
+        },
+        {
+            "name": "Steve's Big Fish",
+            "address": "1284 Teton Dr",
+            "phone": "(801) 225-3786",
+            "url": "bigfishlindon.com",
+            "image": "steves-logo.png",
+            "membership": "gold"
+        },
+        {
+            "name": "Wendy Smith's Burgers",
+            "address": "755 W 200th S",
+            "phone": "(801) 610-4101",
+            "url": "wendysmiths.com",
+            "image": "wendy-smiths-logo.png",
+            "membership": "silver"
+        },
+        {
+            "name": "Lindy's Diner",
+            "address": "245 E 740th N",
+            "phone": "(801) 701-9096",
+            "url": "lindyslindon.com",
+            "image": "lindys-logo.png",
+            "membership": "gold"
+        },
+        {
+            "name": "Howitzer Baked N' Fried",
+            "address": "298 400th W",
+            "phone": "(801) 765-1394",
+            "url": "howitzerrestaurant.com",
+            "image": "howitzer-logo.png",
+            "membership": "silver"
+        },
+        {
+            "name": "The Burgerz",
+            "address": "184 N 1165th E",
+            "phone": "(801) 785-2533",
+            "url": "freshestburgerz.com",
+            "image": "burgerz-logo.png",
+            "membership": "silver"
+        },
+        {
+            "name": "Pink Flower Bakery",
+            "address": "133 S 200th E",
+            "phone": "(801) 785-3118",
+            "url": "pink-flower.com",
+            "image": "pink-flower-logo.png",
+            "membership": "silver"
+        },
+        {
+            "name": "Katie's Smoothies",
+            "address": "75 W 40th S",
+            "phone": "(801) 785-3655",
+            "url": "smoothiesandmore.com",
+            "image": "katies-logo.png",
+            "membership": "silver"
+        },
+        {
+            "name": "Lindon Pizzaria",
+            "address": "973 E 100th N",
+            "phone": "(801) 785-4425",
+            "url": "lindonpizzeria.com",
+            "image": "lindon-pizza-logo.png",
+            "membership": "silver"
+        }
+    ]
+}
