@@ -8,7 +8,7 @@ function displayBusinesses(business) {
     let logo = document.createElement('img');
     let address = document.createElement('p');
     let phone = document.createElement('p');
-    let url = document.createElement('p');
+    let url = document.createElement('a');
     let membership = document.createElement('p');
     
     h2.textContent = String(business.name);
@@ -21,6 +21,8 @@ function displayBusinesses(business) {
     logo.setAttribute('src', `images/logos/${business.image}`);
     logo.setAttribute('alt', `logo for ${business.name}`);
     logo.setAttribute('loading', 'lazy');  
+
+    url.setAttribute('href', String(business.url))
     
     card.appendChild(h2);
     card.appendChild(address)

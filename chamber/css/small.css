@@ -461,11 +461,11 @@ form input:required:valid {
     margin-bottom: 10px;
 }
 
-.cards section p {
-    padding: 5px;
+.cards section p, .cards section a {
+    padding: 3px;
     background-color: var(--background4);
     color: white;
-    margin: 5px 0;
+    margin: 6px 0;
 }
 
 .cards section img {
