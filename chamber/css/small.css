@@ -464,8 +464,16 @@ form input:required:valid {
 .cards section p, .cards section a {
     padding: 3px;
     background-color: var(--background4);
-    color: white;
+    color: var(--paragraph-color);
     margin: 6px 0;
+}
+
+.cards section a { 
+    text-decoration: underline;
+}
+
+.cards section a:hover { 
+    color: var(--link-highlighted);
 }
 
 .cards section img {
