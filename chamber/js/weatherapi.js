@@ -32,7 +32,7 @@ function displayResults(weatherData) {
   
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    weatherIcon.setAttribute('width', 100);
+    weatherIcon.setAttribute('width', 70);
     captionDesc.textContent = desc;
 
     windSpeed.innerHTML = String(weatherData.wind.speed);
