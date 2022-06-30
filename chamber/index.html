@@ -79,22 +79,26 @@
             </div>
             
             <div class="feature" id="weather">
-                <!-- <p>The current temperature in Fairbanks, Alaska is <span id="current-temp"></span> &deg;F</p>
-                <h2>Current Condition Icon</h2>
-                <figure>
-                    <img src="" alt="" id="weather-icon" />
-                    <figcaption></figcaption>
-                </figure> -->
-                <h2>Weather</h2>
+                <!-- <h2>Weather</h2>
                 <img id="weather-logo" src="images/weather.png" alt="" width="65"><br>
                 <label for="temp">Temperature:</label>
                 <input type="text" id="temp" placeholder="°F"></input><br>
                 <label for="speed">Wind Speed:</label>
                 <input type="text" id="speed" placeholder="mph"></input>
                 <div id="chill-div">
-                    <label for="wind-chill">Wind Chill: </label>
+                    <label for="wind-chill">Wind Chill: </label> 
                     <span id="chill-box"><output id="wind-chill" for="temp speed"></output></span>
-                </div>
+                </div> -->
+
+                <h2>Weather</h2>
+                <p><span id="current-temp"></span> &deg;F</p>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure>
+                <p>Wind Speed: <span id="speed"></span> mph</p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+
             </div>
             <div class="feature" id="treehouse">
                 <h2>Treehouse</h2>
@@ -121,7 +125,7 @@
         <p id="last_updated"></p>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/windchill.js"></script>
+    <!-- <script src="js/windchill.js"></script> -->
     <script src="js/weatherapi.js"></script>
 </body>
 
