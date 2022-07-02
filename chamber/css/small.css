@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
+    margin: 9px;
 }
 
 header {
@@ -356,7 +357,7 @@ form input[type=submit] {
     border: 1px solid;
     border-radius: 10px;
     height: 50px;
-    width: 180px;
+    width: 140px;
     background-color: var(--background3);
 }
 
@@ -379,7 +380,7 @@ form label {
     margin-left: 12px;
 }
 
-#bus-description {
+textarea {
     width: 90%;
     height: 185px;
     resize: none;

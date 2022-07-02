@@ -23,6 +23,9 @@
 
     p {
         font-size: 16px;
+        max-width: 60ch;
+        text-align: center;
+        margin: 1em auto;
     }
 
     h3 {
@@ -102,7 +105,11 @@
         max-width: 450px;
     }
 
-    form input[type=text], form input[type=tel], form input[type=email], form textarea {
+    form input[type=submit] {
+        width: 180px;
+    }
+
+    form input[type=text], form input[type=tel], form input[type=email], #form-grid form textarea {
         width: 25ch;
     }
 
