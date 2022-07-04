@@ -8,28 +8,24 @@ function displayBusinesses(business) {
     let logo = document.createElement('img');
     let address = document.createElement('p');
     let phone = document.createElement('p');
-    let url = document.createElement('a');
-    let membership = document.createElement('p');
+    let link = document.createElement('a');
     
     h2.textContent = String(business.name);
     address.textContent = `Address: ${(business.address)}`;
     phone.textContent = `Phone: ${(business.phone)}`;
-    url.textContent = `Web URL: ${(business.url)}`;
-    membership.textContent = `Membership: ${(business.membership)}`;
 
     // Set image attributes
     logo.setAttribute('src', `images/logos/${business.image}`);
     logo.setAttribute('alt', `logo for ${business.name}`);
     logo.setAttribute('loading', 'lazy');  
 
-    url.setAttribute('href', String(business.url))
+    link.setAttribute('href', String(business.url))
     
     card.appendChild(h2);
     card.appendChild(address)
     card.appendChild(phone)
-    card.appendChild(url)
-    card.appendChild(membership)
-    card.appendChild(logo);
+    link.appendChild(logo)
+    card.appendChild(link);
     
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);

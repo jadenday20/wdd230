@@ -98,7 +98,7 @@
     }
 
     #spotlight-3 {
-        display: grid;
+        display: block;
     }
 
     th, td {
@@ -126,5 +126,53 @@
 
     #membership-info {
         display: block;
+    }
+
+    .cards {
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 260px));
+        grid-gap: 5px;
+        box-shadow: 0 0 10px 5px #999;
+        padding: 14px;
+        background-color: var(--background4);
+        justify-content: space-evenly;
+    }
+    
+    .cards section {
+        padding: 7px 7px 2px 7px;
+        text-align: center;
+        border: solid 1px #888;
+        background-color: var(--background3);
+    }
+    
+    .cards section h2 {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+        margin: 0 0 8px 0;
+    }
+    
+    .cards section p{
+        padding: 2px;
+        background-color: var(--background4);
+        color: var(--paragraph-color);
+        margin: 6px 0;
+        font-size: 15px;
+    }
+    
+    .cards section a { 
+        text-decoration: underline;
+    }
+    
+    .cards section a:hover { 
+        color: var(--link-highlighted);
+    }
+    
+    .cards section img {
+        background-color: rgb(239, 236, 236);
+        padding:5px;
+        border-radius: 25px;
+        width: 55%;
+        margin-top: 0;
     }
 }
