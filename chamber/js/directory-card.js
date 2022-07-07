@@ -9,10 +9,12 @@ function displayBusinesses(business) {
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let link = document.createElement('a');
+    let membership = document.createElement('p')
     
     h2.textContent = String(business.name);
     address.textContent = `Address: ${(business.address)}`;
     phone.textContent = `Phone: ${(business.phone)}`;
+    membership.textContent = `Membership: ${business.membership}`
 
     // Set image attributes
     logo.setAttribute('src', `images/logos/${business.image}`);
@@ -26,6 +28,7 @@ function displayBusinesses(business) {
     card.appendChild(phone)
     link.appendChild(logo)
     card.appendChild(link);
+    card.appendChild(membership);
     
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);

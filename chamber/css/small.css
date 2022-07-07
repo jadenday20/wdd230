@@ -70,6 +70,7 @@ p {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
     margin: 9px;
+    text-align: center;
 }
 
 header {
@@ -130,20 +131,28 @@ button:hover {
 
 .social-media {
     background-color: var(--background3);
-    max-width: 200px;
+    max-width: 275px;
+    width: fit-content;
     display:block;
-    margin: auto;
+    margin: 1em auto;
+    text-align: center;
     border-style: solid;
     border-width: 1px;
 }
 
 .social-media p {
-    font-size: 14px;
+    font-size: 15px;
+}
+
+.social-media p, .social-media h3 {
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 .social-media img {
     vertical-align: middle;
     margin: 5px;
+    padding: 0.75em;
 }
 
 .social-media img:hover {
@@ -434,7 +443,7 @@ form input:required:valid {
     margin-top: 1em;
 }
 
-.to-visit {
+.to-visit, .contact-info {
     background-color: var(--background4);
     padding: 8px;
     max-width: 400px;
@@ -489,3 +498,4 @@ form input:required:valid {
     width: 80%;
     margin-top: 8px;
 }
+

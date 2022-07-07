@@ -1,0 +1,34 @@
+{
+    "directors": [
+        {
+            "name": "Stanley Sullivan",
+            "title": "President",
+            "image": "stanley-sullivan.jpg"
+        },
+        {
+            "name": "Samantha Peterson",
+            "title": "Executive Assistant",
+            "image": "samantha-peterson.jpg"
+        },
+        {
+            "name": "Steven Myers",
+            "title": "Chair",
+            "image": "steven-myers.jpg"
+        },
+        {
+            "name": "Catherine Martinez",
+            "title": "Chair-Elect",
+            "image": "catherine-martinez.jpg"
+        },
+        {
+            "name": "George Richardson",
+            "title": "Treasurer",
+            "image": "george-richardson.jpg"
+        },
+        {
+            "name": "Paige Stewart",
+            "title": "Secretary",
+            "image": "paige-stewart.jpg"
+        }
+    ]
+}

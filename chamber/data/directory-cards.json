@@ -14,7 +14,7 @@
             "phone": "(801) 225-3786",
             "url": "bigfishlindon.com",
             "image": "steves-logo.png",
-            "membership": "gold"
+            "membership": "silver"
         },
         {
             "name": "Wendy Smith's Burgers",
@@ -22,7 +22,7 @@
             "phone": "(801) 610-4101",
             "url": "wendysmiths.com",
             "image": "wendy-smiths-logo.png",
-            "membership": "silver"
+            "membership": "gold"
         },
         {
             "name": "Lindy's Diner",
@@ -38,7 +38,7 @@
             "phone": "(801) 765-1394",
             "url": "howitzerrestaurant.com",
             "image": "howitzer-logo.png",
-            "membership": "silver"
+            "membership": "bronze"
         },
         {
             "name": "The Burgerz",
@@ -46,7 +46,7 @@
             "phone": "(801) 785-2533",
             "url": "freshestburgerz.com",
             "image": "burgerz-logo.png",
-            "membership": "silver"
+            "membership": "bronze"
         },
         {
             "name": "Pink Flower Bakery",
@@ -70,7 +70,7 @@
             "phone": "(801) 785-4425",
             "url": "lindonpizzeria.com",
             "image": "lindon-pizza-logo.png",
-            "membership": "silver"
+            "membership": "gold"
         }
     ]
 }
