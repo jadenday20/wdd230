@@ -431,11 +431,11 @@ form input:required:valid {
     scroll-margin-top: 100px;
 }
 
-#membership-info a {
+#membership-info a, #ribbon a {
     color: var(--link-highlighted);
 }
 
-#membership-info a:hover {
+#membership-info a:hover, #ribbon a:hover {
     color: var(--link-color);
 }
 
@@ -498,4 +498,3 @@ form input:required:valid {
     width: 80%;
     margin-top: 8px;
 }
-
