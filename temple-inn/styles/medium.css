@@ -1,0 +1,27 @@
+@media (min-width:500px) {
+    body {
+        font-size: 18px;
+    }
+    
+    main, header, footer {
+        padding: 1em;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav a {
+        width: 6.5em;
+        font-size:  16px;
+        padding: .75em .3em;
+        margin-left: .05em;
+        margin-right: .05em;
+        display: block;
+    }
+
+    nav a:first-child {
+        display: none;
+    }
+}

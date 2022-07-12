@@ -1,0 +1,118 @@
+:root {
+    --paragraph-color: #1a1320;
+    --paragraph-color2: #eee;
+    --background1: #444054;
+    --background2: #eee;
+    --link-color: #DB8A74;
+    --link-highlighted: #FAC9B8;
+    --link-color2: #d26648;
+    --secondary-color: #2F243A;
+    --secondary-2-color: #BEBBBB;
+    --tertiary-color: #394f60;
+    --heading-font: 'Philosopher', sans-serif;
+    --paragraph-font: 'Source Serif Pro', serif;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+}
+
+main, header, footer {
+    padding: 1.5em;
+}
+
+main {
+    background-color: var(--background2);
+    text-align: center;
+}
+
+header, footer {
+    background-color: var(--background1);
+    text-align: center;
+}
+
+header p, header h1, header h2, footer p, footer h2 {
+    color: var(--paragraph-color2);
+}
+
+main p, main h1, main h2 {
+    color: var(--paragraph-color);
+}
+
+main p {
+    text-align: left;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: .5em auto;
+}
+
+p, a {
+    font-family: var(--paragraph-font);
+    max-width: 50ch;
+    margin: auto;
+}
+
+a {
+    color:var(--link-color);
+    text-underline-offset: 1px;
+    text-decoration-thickness: 1px;
+}
+
+main a {
+    color: var(--link-color2);
+}
+
+a:hover {
+    color:var(--link-highlighted);
+}
+
+main a:hover {
+    color: var(--link-color);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a:first-child {
+    display: block;
+}
+
+nav a {
+    margin: .15em auto;
+    padding: .75em;
+    width: 70%;
+    background-color: var(--tertiary-color);
+    border: .05em solid var(--secondary-2-color);
+    border-radius: .5em;
+    text-decoration: none;
+    font-size: 22px;
+    display: none;
+}
+
+nav a:hover{
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--link-color);
+}
+
+.responsive a {
+    display: block;
+}
+
+.large-only {
+    display: none;
+}
+
+#social-links img {
+    width: 30px;
+}
