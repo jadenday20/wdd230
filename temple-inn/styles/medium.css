@@ -21,7 +21,64 @@
         display: block;
     }
 
+    #footer-grid {
+        display: grid;
+        grid-template-columns: 6fr 6fr 5fr;
+        padding: .4em;
+        margin: .75em;
+        justify-items: center;
+        align-items: center;
+        grid-gap: .5em;
+    }
+
+    #social-links img {
+        width: 40px;
+        margin: 0;
+    }
+    
+    #contact-links img {
+        width: 22px;
+        margin: 0;
+    }
+
+    #social-links {
+        grid-template-columns: 1fr 1fr;
+    }
+
     nav a:first-child {
         display: none;
+    }
+
+    #greeting {
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+    }
+
+    #greeting p {
+        background-color: #EEEEEE73;
+    }
+
+    #hero-div {
+        width: 90%;
+    }
+
+    #title {
+        position: relative;
+        height: 5em;
+    }
+
+    #title h1 {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+
+    #title img {
+        position: absolute;
+        left: 10%;
+        top: -50%;
+        transform: translateY(50%);
     }
 }

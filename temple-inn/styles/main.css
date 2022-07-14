@@ -19,7 +19,7 @@ body {
 }
 
 main, header, footer {
-    padding: 1.5em;
+    padding: 0.5em;
 }
 
 main {
@@ -96,10 +96,10 @@ nav a {
     border-radius: .5em;
     text-decoration: none;
     font-size: 22px;
-    display: none;
+    display: none;    
 }
 
-nav a:hover{
+nav a:hover, .call-to-action:hover {
     cursor: pointer;
     background-color: var(--secondary-color);
     color: var(--link-color);
@@ -113,6 +113,74 @@ nav a:hover{
     display: none;
 }
 
+#contact-links, #social-links {
+    display: grid;
+    width: fit-content;
+    grid-gap: .4em;
+    padding: .4em;
+    border: 1px solid var(--background2);
+}
+
+#contact-links {
+    grid-template-columns: fit-content(40px) fit-content(100ch);
+}
+
+#nav-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: .5em;
+    margin: 1em auto;
+}
+
+#social-links {
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--secondary-2-color);
+    height: fit-content;
+    margin: auto;
+}
+
 #social-links img {
     width: 30px;
+    margin: 0;
+}
+
+#contact-links img {
+    width: 30px;
+    margin: 0;
+}
+
+#hero-div {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+#greeting p {
+    background-color: var(--secondary-2-color);
+    text-align: center;
+    padding: 5px;
+    border: .5px solid black;
+    width: 20ch;
+}
+
+.call-to-action {
+    color: var(--link-color);
+    background-color: var(--tertiary-color);
+    padding: 8px 18px;
+    margin: 5px;
+    font-size: 18px;
+    border: .05em solid var(--secondary-2-color);
+    border-radius: .5em;
+} 
+
+
+#hero-div img {
+    width: 100%;
+}
+
+#main-logo {
+    width: 45px;
+    padding: .75em;
+    border-radius: 50%;
+    border: 2px solid var(--background2);
 }

@@ -25,4 +25,23 @@
     .large-only {
         display: block;
     }
+
+    #social-links {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #social-links img {
+        width: 50px;
+        margin: 0;
+    }
+    
+    #contact-links img {
+        width: 40px;
+        margin: 0;
+    }
+
+    #title img {
+        left: 1em;
+    }
+
 }
