@@ -1,0 +1,28 @@
+{
+    "temples": [
+        {
+            "name": "Phoenix, Arizona",
+            "image": "phoenix.jpeg",
+            "address": "5220 W Pinnacle Peak Rd, Phoenix AZ 85310, United States",
+            "telephone": "623-474-9500"
+        },
+        {
+            "name": "Logan, Utah",
+            "image": "logan.jpeg",
+            "address": "175 N 300 E, Logan UT 84321-4720, United States",
+            "telephone": "435-752-3611"
+        },
+        {
+            "name": "Sacramento, California",
+            "image": "sacramento.jpeg",
+            "address": "2110 California Cir, Rancho Cordova CA 95742-6415, United States",
+            "telephone": "916-357-5870"
+        },
+        {
+            "name": "Washington D.C.",
+            "image": "dc.jpeg",
+            "address": "9900 Stoneybrook Dr, Kensington MD 20895-3199, United States",
+            "telephone": "301-588-0650"
+        }
+    ]
+}

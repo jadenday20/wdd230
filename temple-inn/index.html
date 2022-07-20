@@ -36,7 +36,10 @@
         </header>
         <main>
             <div id="hero-div">
-                <img src="images/hero.jpeg">
+                <picture>
+                    <source media="(min-width:575px)" srcset="images/hero.jpeg">
+                    <img src="images/hero-small.jpeg" alt="">
+                </picture>
                 <div id="greeting">
                     <p>Welcome to Temple Inn & Suites!</p>
                     <button class="call-to-action">Make a Reservation</button>

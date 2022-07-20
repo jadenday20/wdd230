@@ -166,11 +166,18 @@ main #contact-links {
 }
 
 #greeting p {
-    background-color: var(--secondary-2-color);
+    background-color: #EEEEEEDD;
     text-align: center;
     padding: 5px;
     border: .5px solid black;
     width: 20ch;
+    font-size: 15px;
+}
+
+#greeting {
+    position: absolute;
+    right: 8%;
+    bottom: 8%;
 }
 
 .call-to-action {
@@ -178,7 +185,7 @@ main #contact-links {
     background-color: var(--tertiary-color);
     padding: 8px 18px;
     margin: 5px;
-    font-size: 18px;
+    font-size: 16px;
     border: .05em solid var(--secondary-2-color);
     border-radius: .5em;
 } 
@@ -273,9 +280,36 @@ form input:required:valid {
     background-color: #ddd;
 }
 
+#amenities a {
+    display: block;
+}
+
 #special-services {
     margin: .5em auto;
     padding: .5em;
     border: 1px solid var(--secondary-color);
     width: 80%;
+}
+
+#temples-grid {
+    margin: auto;
+}
+
+#temples-grid section {
+    border: 1px solid var(--secondary-color);
+    margin: 1em auto;
+    background-color: #ccc;
+    width: 450px;
+    max-width: 95%;
+}
+
+#temples-grid img {
+    border: 2.5px solid var(--secondary-color);
+    width: 80%;
+}
+
+#temples-grid p {
+    text-align: center;
+    margin: .75em auto;
+    padding: 0 1em;
 }

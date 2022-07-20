@@ -60,15 +60,10 @@
     }
 
     #greeting {
-        position: absolute;
         right: 10%;
         bottom: 10%;
     }
-
-    #greeting p {
-        background-color: #EEEEEEDD;
-    }
-
+    
     #hero-div {
         width: 90%;
     }
@@ -133,5 +128,16 @@
     #amenities-grid img, .grid-box img {
         box-shadow: 8px 10px 5px var(--secondary-2-color);
         margin-bottom: .5em;
+    }
+
+    #temples-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+        grid-gap: 5px;
+        max-width: 1000px;
+    }
+
+    #temples-grid img {
+        width: 350px;
     }
 }

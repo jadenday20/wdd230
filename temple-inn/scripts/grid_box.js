@@ -23,6 +23,7 @@ function displayAmenities(amenitiy) {
     image.setAttribute('width', 300)
     
     textSection.setAttribute('id', amenitiy.id);
+    textSection.style.scrollMarginTop = '75px';
     textSection.appendChild(h3);
     textSection.appendChild(p);
     ul.appendChild(li); 
