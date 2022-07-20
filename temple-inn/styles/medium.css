@@ -1,4 +1,4 @@
-@media (min-width:500px) {
+@media (min-width:575px) {
     body {
         font-size: 18px;
     }
@@ -31,9 +31,18 @@
         grid-gap: .5em;
     }
 
+    #contact-links, #social-links {
+        grid-gap: .5em;
+        padding: .4em;
+    }
+
     #social-links img {
-        width: 40px;
+        width: 35px;
         margin: 0;
+    }
+
+    #nav-links {
+        grid-template-columns: 1fr 1fr;
     }
     
     #contact-links img {
@@ -43,6 +52,7 @@
 
     #social-links {
         grid-template-columns: 1fr 1fr;
+        margin: auto;
     }
 
     nav a:first-child {
@@ -56,7 +66,7 @@
     }
 
     #greeting p {
-        background-color: #EEEEEE73;
+        background-color: #EEEEEEDD;
     }
 
     #hero-div {
@@ -80,5 +90,48 @@
         left: 10%;
         top: -50%;
         transform: translateY(50%);
+    }
+
+    form {
+        width: 22em;
+        background-color: var(--secondary-2-color);
+        margin: auto;
+        padding: 1em 2em;
+    }
+
+    form label {
+        margin-left: 0;
+    }
+
+    form input[type=submit] {
+        margin: 1em 0;
+    }
+
+    form input[type=text], form input[type=tel], form input[type=email] {
+        width: 30ch;
+        margin: 3px 0;
+    }
+
+    form textarea {
+        margin: 3px 0;
+    }
+
+    #amenities {
+        width: 400px;
+    }
+
+    #special-services {
+        width: 500px;
+        justify-content: space-around;
+        display: flex;
+    }
+
+    #special-services img {
+        height: 190px; width: 190px;
+    }
+
+    #amenities-grid img, .grid-box img {
+        box-shadow: 8px 10px 5px var(--secondary-2-color);
+        margin-bottom: .5em;
     }
 }

@@ -21,10 +21,9 @@
     <body>
         <header>
             <div id="title">
-                <a href="#"><img id="main-logo" src="images/logo-main.png" alt="link to home page"></a>
+                <a href="index.html"><img id="main-logo" src="images/logo-main.png" alt="link to home page"></a>
                 <h1>Temple Inn & Suites</h1>
             </div>
-            
             <nav>
                 <a class="hamburger" href="#" onclick="toggleMenu()">&#9776; Menu</a>
                 <a href="index.html">Home</a>
@@ -35,6 +34,31 @@
             </nav>
         </header>
         <main>
+            <h2>Contact Us</h2>
+            <div id="contact-links">
+                <img src="images/contact/map.png" alt="">
+                <a href="https://goo.gl/maps/CgJDfpiaVRH4nQU58">4800 Montgomery Ln #300, Bethesda, MD 20814</a>
+                <img src="images/contact/phone.png" alt="">
+                <a href="tell:385-202-8190">Phone #: 801-555-5555</a>
+                <img src="images/contact/email.png" alt="">
+                <a href="mailto:jdoe@fakemail.com">Email: JDoe@fakemail.com</a>
+            </div>
+            <h2>Send Us Your Feedback</h2>
+            <form action="thankyou.html" method="post">
+                <section>
+                    <label for="name">Name* </label>
+                    <input type="text" id="name" name="name" autofocus required maxlength="35">
+                </section>
+                <section>
+                    <label for="email">Email* </label>
+                    <input type="email" id="email" name="email" required placeholder="jdoe@example.com" maxlength="25">
+                    <label for="phone#">Phone Number </label>
+                    <input type="tel" id="phone#" name="phone#" maxlength="15">
+                </section>
+                <label for="feedback">Questions/Feedback </label>
+                <textarea id="feedback" name="feedback" maxlength="200"></textarea>
+                <input type="submit" value="Send Feedback">
+            </form>
         </main>
         <footer>
             <div id="footer-grid">
@@ -64,6 +88,7 @@
             <p>&copy;2022 | Jaden Day | <a href="https://www.byui.edu/">BYU-Idaho</a> | WDD 230</p>
         </footer>
         <script src="scripts/main.js"></script>
+        <script src="scripts/form_submit.js"></script>
     </body>
 
 </html>

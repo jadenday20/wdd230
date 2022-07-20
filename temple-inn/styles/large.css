@@ -15,11 +15,21 @@
         margin-right: 0;
     }
 
-    .grid-box {
+    .grid-box, #amenities-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: .75em;
-        margin: 1em 7.5em;
+        margin: 1em auto;
+        place-items: center;
+        max-width: 800px;
+    }
+
+    #amenities-grid h3 {
+        margin-top: 0;
+    }
+
+    #amenities-grid p {
+        text-align: center;
     }
 
     .large-only {
