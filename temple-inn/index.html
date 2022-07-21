@@ -50,17 +50,86 @@
             <div class="grid-box">
                 <section>
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit earum nostrum delectus rem!
-                        Consequatur, alias explicabo. Rerum, sapiente ipsum iste earum veniam quidem magni, ex
-                        doloremque, autem laudantium eos veritatis nesciunt debitis dolore pariatur? Aliquid praesentium
-                        maiores repellat beatae expedita.</p>
+                    <p>We are a hotel chain whose primary focus is providing housing for temple patrons. Our hotels are outfitted to meet all of the basic temple-goer neads. We provide housing, food, family history resources, and much more. Our goal is to help you have the best experience possible as you prepare to serve in the house of the Lord.</p>
                 </section>
-                <img src="images/hotel.jpg" alt="" width="300">
-                <img class="large-only" src="images/bountiful_temple.jpeg" alt="" width="300">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit earum nostrum delectus rem!
-                    Consequatur, alias explicabo. Rerum, sapiente ipsum iste earum veniam quidem magni, ex doloremque,
-                    autem laudantium eos veritatis nesciunt debitis dolore pariatur? Aliquid praesentium maiores
-                    repellat beatae expedita.</p>
+                <img src="images/homepage/hotel.jpg" alt="" width="300">
+                <img class="large-only" src="images/homepage/bountiful_temple.jpeg" alt="" width="300">
+                <section>
+                    <h2>Coming Soon: Bountiful</h2>
+                    <p>We currently have 4 locations around the U.S., with our newest being the Arizona Phoenix location. On June 1st we officially anounced the construction of our fourth location: Bountiful, Utah.</p>
+                </section>
+                <section>
+                    <h2>About the Bountiful Temple</h2>
+                    <p>The Bountiful, Utah temple was anounced on February 2nd, 1990 and was dedicated in January of 1995. The temple was dedicated by President Howard W. Hunter and was the 47th temple dedicated in this dispensation.</p>
+                </section>
+                <img src="images/homepage/bountiful_temple2.jpeg" alt="" width="300">
+            </div>
+
+            <h2>Where You Can Find Us</h2>
+
+            <!-- Slideshow container -->
+            <!-- Save for a few changes, the 'slideshow' content below was taken from w3schools: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                <img src="images/temples/dc.jpeg" style="width:100%" onclick="plusSlides(1)">
+                <div class="text">Washington D.C.</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="images/temples/logan.jpeg" style="width:100%" onclick="plusSlides(1)">
+                <div class="text">Logan, Utah</div>
+                </div>
+            
+                <div class="mySlides fade">
+                <img src="images/temples/phoenix.jpeg" style="width:100%" onclick="plusSlides(1)">
+                <div class="text">Phoenix, Arizona</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/temples/sacramento.jpeg" style="width:100%" onclick="plusSlides(1)">
+                    <div class="text">Sacramento, California</div>
+                    </div>
+            
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+            <h2><a href="contact.html">Contact Us</a></h2>
+            <div id="contact-links">
+                <img src="images/contact/map.png" alt="">
+                <a href="https://goo.gl/maps/CgJDfpiaVRH4nQU58">4800 Montgomery Ln #300, Bethesda, MD 20814</a>
+                <img src="images/contact/phone.png" alt="">
+                <a href="tell:385-202-8190">Phone #: 801-555-5555</a>
+                <img src="images/contact/email.png" alt="">
+                <a href="mailto:jdoe@fakemail.com">Email: JDoe@fakemail.com</a>
+            </div>
+            <div id="weather">
+
+                <h2>Logan Utah: Todays Weather</h2>
+                <p>Temperature: <span id="current-temp"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <figure>
+                    <img src="" alt="" id="weather-icon" />
+                    <figcaption></figcaption>
+                </figure>
+
+            </div>
+            <div id="forcast">
+                <h2>Three Day Forcast</h2>
+                <div id="forcast-grid"></div>
+
             </div>
         </main>
         <footer>
@@ -89,8 +158,12 @@
                 </div>
             </div>
             <p>&copy;2022 | Jaden Day | <a href="https://www.byui.edu/">BYU-Idaho</a> | WDD 230</p>
+            <p id="last_updated"></p>
         </footer>
         <script src="scripts/main.js"></script>
+        <script src="scripts/slides.js"></script>
+        <script src="scripts/last_updated.js"></script>
+        <script src="scripts/weatherapi.js"></script>
     </body>
 
 </html>

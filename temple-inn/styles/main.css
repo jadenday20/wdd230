@@ -48,11 +48,13 @@ main p {
 h1, h2, h3, h4 {
     font-family: var(--heading-font);
     text-align: center;
+    margin-bottom: .5em;
 }
 
 img {
     display: block;
     margin: .5em auto;
+    max-width: 100%;
 }
 
 p, a {
@@ -239,13 +241,17 @@ form textarea {
     resize: none;
 }
 
-form input[type=text], form input[type=tel], form input[type=email], form textarea {
+form input[type=text], form input[type=tel], form input[type=email], form textarea, form input[type=date], select {
     display: block;
     width: 90%;
     padding: 6px;
     margin: 3px auto;
     border: 1px solid #666;
     border-radius: 5px;
+}
+
+#location-radio label {
+    margin-top: .25em;
 }
 
 form input:required {
@@ -312,4 +318,154 @@ form input:required:valid {
     text-align: center;
     margin: .75em auto;
     padding: 0 1em;
+}
+
+ul {
+    max-width: 500px;
+    margin: 1em auto;
+    padding: .25em .5em;
+    background-color: var(--secondary-2-color);
+}
+
+li {
+    text-align: left;
+    margin: 1em;
+    border: .5px solid var(--secondary-color);
+    padding: 3px 5px;
+}
+
+.food {
+    width: 90%;
+}
+
+/*-----------------------Slideshow------------------------*/
+/* Much of the 'Slideshow' code is taken from w3schools: https://www.w3schools.com/howto/howto_js_slideshow.asp*/
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background-color: #999;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+  }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: var(--paragraph-color);
+  background-color: var(--secondary-2-color);
+  font-size: 16px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 14px;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Colors */
+table {
+    margin: .5em auto;
+    border: 1px solid var(--secondary-color);
+    padding: 5px;
+    border-spacing: 1em;
+}
+
+td {
+    min-width: 2em;
+    padding: 3px 5px;
+}
+.option1-1 {background-color: #A7CAB1;border: 1px solid var(--secondary-color);}
+.option1-2 {background-color: #847996;border: 1px solid var(--secondary-color);}
+.option2-1 {background-color: #FFB7C3;border: 1px solid var(--secondary-color);}
+.option2-2 {background-color: #BCF4F5;border: 1px solid var(--secondary-color);}
+.option3-1 {background-color: #6F1A07;border: 1px solid var(--secondary-color);color:#eee}
+.option3-2 {background-color: #F7F3E3;border: 1px solid var(--secondary-color);}
+.option4-1 {background-color: #6F1A07;border: 1px solid var(--secondary-color);color:#eee}
+.option4-2 {background-color: #E8DB7D;border: 1px solid var(--secondary-color);}
+
+#last-updated {
+    color: var(--paragraph-color2);
+}
+
+/* Weather API */
+#weather, #forcast {
+    background-color: var(--secondary-2-color);
+    border: 1px solid var(--secondary-color);
+    margin: .5em auto;
+    max-width: 250px;
+    padding: .5em;
+    border-radius: 5px;
+}
+
+#forcast {
+    max-width: 450px;
+}
+
+#weather p {
+    text-align: center;
 }
