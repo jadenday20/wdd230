@@ -42,7 +42,7 @@ function displayResults(weatherData) {
       let forcast = document.createElement('p');
       let image = document.createElement('img');
       h3.textContent = `Day ${i}`;
-      forcast.textContent = 
+      forcast.textContent = ``
 
       card.appendChild(h3);
       card.appendChild(forcast);
