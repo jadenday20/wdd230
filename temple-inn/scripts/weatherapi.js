@@ -3,10 +3,12 @@ const humidity = document.querySelector('#humidity');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const forcastGrid = document.querySelector('#forcast-grid');
+const alerts = document.querySelector('#alerts');
 
-const weatherData = "https://api.openweathermap.org/data/2.5/weather?q=Logan&units=imperial&appid=0853e46b883f14bf1943fbcc44cedd0d";
-// "https://api.openweathermap.org/data/3.0/onecall?q=Logan&units=imperial&appid=0853e46b883f14bf1943fbcc44cedd0d"
+// const weatherData = "https://api.openweathermap.org/data/2.5/weather?q=Logan&units=imperial&appid=0853e46b883f14bf1943fbcc44cedd0d";
 
+// const weatherData = "https://api.openweathermap.org/data/2.5/onecall?lat=41.7355&lon=-111.8344&exclude=minutely,hourly&units=imperial&appid=f8f8a66457daa4bbfe0aaf80d0fd5530";
+const weatherData = "https://api.openweathermap.org/data/2.5/onecall?lat=32.2217&lon=-110.9265&exclude=minutely,hourly&units=imperial&appid=f8f8a66457daa4bbfe0aaf80d0fd5530";
 async function apiFetch() {
     try {
       const response = await fetch(weatherData);
@@ -25,29 +27,61 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(weatherData) {
-    currentTemp.innerHTML = String(weatherData.main.temp.toFixed(0));
-    humidity.innerHTML = String(weatherData.main.humidity.toFixed(0));
+    currentTemp.innerHTML = String(weatherData.current.temp.toFixed(0));
+    humidity.innerHTML = String(weatherData.current.humidity.toFixed(0));
   
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
+    const iconsrc = `https://openweathermap.org/img/w/${weatherData.current.weather[0].icon}.png`;
+    const desc = weatherData.current.weather[0].description;
   
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     weatherIcon.setAttribute('width', 70);
     captionDesc.textContent = desc;
 
+    // 3-Day Forecast
     for (let i = 1; i < 4; i++) {
       let card = document.createElement('section');
       let h3 = document.createElement('h3');
-      let forcast = document.createElement('p');
-      let image = document.createElement('img');
-      h3.textContent = `Day ${i}`;
-      forcast.textContent = ``
+      let temperature = document.createElement('p');
+      let icon = document.createElement('img');
+      let caption = document.createElement('figcaption');
+
+      const src = `https://openweathermap.org/img/w/${weatherData.daily[i].weather[0].icon}.png`;
+      const description = weatherData.daily[i].weather[0].description;
+      icon.setAttribute('src', src);
+      icon.setAttribute('alt', description);
+      icon.setAttribute('width', 70);
+      caption.textContent = description;
+
+      if (i == 1) {
+        h3.textContent = `In ${i} Day`;
+      }
+      else {
+        h3.textContent = `In ${i} Days`;
+      }
+      temperature.textContent = `${String(weatherData.daily[i].temp.day.toFixed(0))}°F`;
 
       card.appendChild(h3);
-      card.appendChild(forcast);
-      card.appendChild(image);
+      card.appendChild(temperature);
+      card.appendChild(icon);
+      card.appendChild(caption)
       forcastGrid.appendChild(card);
+    }
+
+    for (let i = 0; i < weatherData.alerts.length; i++) {
+      let banner = document.createElement('section');
+      let alert = document.createElement('p');
+
+      alert.textContent = weatherData.alerts[i].description;
+      banner.appendChild(alert);
+      alerts.appendChild(banner);
+    }
+
+    // Weather Alerts
+    if (weatherData.alerts.length != 0) {
+      document.querySelector('header').style.opacity = "0.6";
+      document.querySelector('main').style.opacity = "0.6";
+      document.querySelector('footer').style.opacity = "0.6";
     }
 
   }
