@@ -7,8 +7,9 @@ const alerts = document.querySelector('#alerts');
 
 // const weatherData = "https://api.openweathermap.org/data/2.5/weather?q=Logan&units=imperial&appid=0853e46b883f14bf1943fbcc44cedd0d";
 
-// const weatherData = "https://api.openweathermap.org/data/2.5/onecall?lat=41.7355&lon=-111.8344&exclude=minutely,hourly&units=imperial&appid=f8f8a66457daa4bbfe0aaf80d0fd5530";
-const weatherData = "https://api.openweathermap.org/data/2.5/onecall?lat=32.2217&lon=-110.9265&exclude=minutely,hourly&units=imperial&appid=f8f8a66457daa4bbfe0aaf80d0fd5530";
+const weatherData = "https://api.openweathermap.org/data/2.5/onecall?lat=41.7355&lon=-111.8344&exclude=minutely,hourly&units=imperial&appid=f8f8a66457daa4bbfe0aaf80d0fd5530";
+// const weatherData = "https://api.openweathermap.org/data/2.5/onecall?lat=32.8962&lon=-109.8276&exclude=minutely,hourly&units=imperial&appid=f8f8a66457daa4bbfe0aaf80d0fd5530";
+
 async function apiFetch() {
     try {
       const response = await fetch(weatherData);
@@ -68,22 +69,35 @@ function displayResults(weatherData) {
       forcastGrid.appendChild(card);
     }
 
-    for (let i = 0; i < weatherData.alerts.length; i++) {
-      let banner = document.createElement('section');
-      let alert = document.createElement('p');
-
-      alert.textContent = weatherData.alerts[i].description;
-      banner.appendChild(alert);
-      alerts.appendChild(banner);
-    }
-
     // Weather Alerts
-    if (weatherData.alerts.length != 0) {
+    if (Object.keys(weatherData).length > 6) {
+      alerts.style.display = "block";
       document.querySelector('header').style.opacity = "0.6";
       document.querySelector('main').style.opacity = "0.6";
       document.querySelector('footer').style.opacity = "0.6";
-    }
 
+      for (let i = 0; i < weatherData.alerts.length; i++) {
+        let banner = document.createElement('section');
+        let close = document.createElement('button');
+        let alert = document.createElement('p');
+  
+        alert.textContent = weatherData.alerts[i].description;
+        close.textContent = "✕";
+        close.setAttribute('onclick', "closeMe()")
+        banner.appendChild(close);
+        banner.appendChild(alert);
+        alerts.appendChild(banner);
+      }
+    }
+    
+
+  }
+
+function closeMe() {
+    alerts.style.display = "none";
+    document.querySelector('header').style.opacity = "1";
+    document.querySelector('main').style.opacity = "1";
+    document.querySelector('footer').style.opacity = "1";
   }
 
 displayResults(weatherData)

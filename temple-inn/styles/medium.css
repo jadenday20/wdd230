@@ -137,7 +137,7 @@
         max-width: 1000px;
     }
 
-    #temples-grid img {
+    #temples-grid .temples{
         width: 350px;
     }
 

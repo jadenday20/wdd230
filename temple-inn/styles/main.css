@@ -21,7 +21,6 @@ body {
 
 main, header, footer {
     padding: 0.5em;
-    /* opacity: .6; */
 }
 
 main {
@@ -310,7 +309,7 @@ form input:required:valid {
     max-width: 95%;
 }
 
-#temples-grid img {
+#temples-grid .temple {
     border: 2.5px solid var(--secondary-color);
     width: 80%;
 }
@@ -484,7 +483,7 @@ td {
 }
 
 #alerts {
-    max-width: 100%;
+    max-width: 90%;
     width: 450px;
     left: 50%;
     top: 50%;
@@ -492,12 +491,25 @@ td {
     position:fixed;
     z-index: 1;
     margin: 0;
+    display: none;
 }
 
 #alerts p {
     font-size: 16px;
     width: 95%;
     max-width: 95%;
-    padding: 1em;
+    margin: 1em;
     background-color: var(--secondary-2-color);
+}
+
+#alerts button {
+    border-radius: 50%;
+    border: 1px solid #555;
+    font-size: 20px;
+}
+
+#alerts button:hover {
+    border: 1px solid #777;
+    color: #666;
+    cursor: pointer;
 }
