@@ -250,7 +250,7 @@ form input[type=text], form input[type=tel], form input[type=email], form textar
     border-radius: 5px;
 }
 
-#location-radio label {
+#location-radio label, #rooms-radio label {
     margin-top: .25em;
 }
 
@@ -271,6 +271,7 @@ form input:required:valid {
     width: 80%;
     margin: .5em auto;
     border: 1px solid var(--secondary-color);
+    padding: .25em .75em;
 }
 
 #amenities ul {
@@ -281,7 +282,7 @@ form input:required:valid {
 
 #amenities li {
     text-align: center;
-    margin: .5em;
+    margin: .5em 0;
     padding: 5px;
     background-color: #ddd;
 }
@@ -290,7 +291,7 @@ form input:required:valid {
     display: block;
 }
 
-#special-services {
+#services-buttons {
     margin: .5em auto;
     padding: .5em;
     border: 1px solid var(--secondary-color);
@@ -331,7 +332,10 @@ li {
     text-align: left;
     margin: 1em;
     border: .5px solid var(--secondary-color);
+    background-color: var(--background2);
+    list-style: none;
     padding: 3px 5px;
+    font-size: 20px;
 }
 
 .food {
@@ -512,4 +516,11 @@ td {
     border: 1px solid #777;
     color: #666;
     cursor: pointer;
+}
+
+sub {
+    margin-bottom: .5em;
+    font-size: 18px;
+    display: block;
+    text-align: center;
 }

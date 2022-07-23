@@ -1,4 +1,6 @@
 const requestURL = 'json/amenities.json';
+const amenitiesList = document.querySelector(`#amenities`);
+const amenitiesGrid = document.querySelector(`#amenities-grid`);
 
 function displayAmenities(amenitiy) {
 
@@ -29,19 +31,21 @@ function displayAmenities(amenitiy) {
     ul.appendChild(li); 
     li.appendChild(a);
     a.setAttribute('href', `#${amenitiy.id}`)
+    amenitiesGrid.appendChild(textSection);
+    amenitiesGrid.appendChild(image);
     
-    // Add/append the existing HTML div with the cards class with the section(card)
-    if (is_col_odd == "True" || window.innerWidth < 1000){
-        document.querySelector(`#amenities-grid`).appendChild(textSection);
-        document.querySelector(`#amenities-grid`).appendChild(image);
-        is_col_odd = "False";
-    } else {
-        document.querySelector(`#amenities-grid`).appendChild(image);
-        document.querySelector(`#amenities-grid`).appendChild(textSection);
-        is_col_odd = "True";
-    }
+    // // Add/append the existing HTML div with the cards class with the section(card)
+    // if (is_col_odd == "True" || window.innerWidth < 1000){
+    //     amenitiesGrid.appendChild(textSection);
+    //     amenitiesGrid.appendChild(image);
+    //     is_col_odd = "False";
+    // } else {
+    //     amenitiesGrid.appendChild(image);
+    //     amenitiesGrid.appendChild(textSection);
+    //     is_col_odd = "True";
+    // }
 
-    document.querySelector(`#amenities`).appendChild(ul)
+    amenitiesList.appendChild(ul)
   }
 
 let is_col_odd = "True";

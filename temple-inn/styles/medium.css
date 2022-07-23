@@ -21,6 +21,10 @@
         display: block;
     }
 
+    li {
+        font-size: 22px;
+    }
+
     #footer-grid {
         display: grid;
         grid-template-columns: 6fr 6fr 5fr;
@@ -115,13 +119,13 @@
         width: 400px;
     }
 
-    #special-services {
+    #services-buttons {
         width: 500px;
         justify-content: space-around;
         display: flex;
     }
 
-    #special-services img {
+    #services-buttons img {
         height: 190px; width: 190px;
     }
 
